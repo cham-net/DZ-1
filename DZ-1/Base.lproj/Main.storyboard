@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DZ_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Веселый кролик" translatesAutoresizingMaskIntoConstraints="NO" id="0CD-aO-scP">
+                                <rect key="frame" x="69.5" y="57.5" width="236" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="236" id="rKe-EA-qci"/>
+                                    <constraint firstAttribute="width" constant="236" id="x9r-U5-r0b"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MtP-Xu-a4O">
+                                <rect key="frame" x="97" y="591" width="181" height="36"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title=" Открыть стрельбу! ">
+                                    <color key="titleColor" red="0.98039215690000003" green="0.93987250446856496" blue="0.97072052003617448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ffO-U6-RIY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Label" text="Пожалуйста, не стреляй в кроликов!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jp-yp-1n7">
+                                <rect key="frame" x="32.5" y="308.5" width="310" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="t1O-Jt-AbL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7736181067408352" green="0.93484946273096359" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0CD-aO-scP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1Oo-pG-Yxq"/>
+                            <constraint firstItem="7jp-yp-1n7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3vK-Su-Bno"/>
+                            <constraint firstItem="7jp-yp-1n7" firstAttribute="top" secondItem="0CD-aO-scP" secondAttribute="bottom" constant="15" id="NU2-7p-ujK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MtP-Xu-a4O" secondAttribute="bottom" constant="40" id="OiS-Eo-U3p"/>
+                            <constraint firstItem="MtP-Xu-a4O" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WfP-5D-Qu9"/>
+                            <constraint firstItem="7jp-yp-1n7" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="jWs-0G-m7u"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Image" destination="0CD-aO-scP" id="lc7-KZ-Gu7"/>
+                        <outlet property="Label" destination="7jp-yp-1n7" id="etG-EN-AE2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="128.57142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Веселый кролик" width="78.666664123535156" height="78.666664123535156"/>
+    </resources>
+</document>
